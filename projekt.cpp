@@ -14,6 +14,10 @@ bool czy_pierwsza(int n){
 int main(){
 	int x;
 	cin >> x;
+	if(x<1){
+		cout << "Liczba jest ujemna !!!"<<endl;
+		return 0;
+	}
 	cout << x << endl;
 	cout <<"Czy liczba jest pierwsza (1-tak,0-nie) : "<<czy_pierwsza(x)<<endl;
 return 0;}
